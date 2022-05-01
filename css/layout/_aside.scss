@@ -1,0 +1,35 @@
+.skills{
+    grid-area: negro;
+    background-color: #333333;
+    &__habilidades{
+        margin: 30px 0 0 30px;
+        h2{
+            margin-bottom: 10px;
+            font-size: 25px;
+            text-transform: uppercase;
+            color:#99c7c7;
+        }
+        ul{ 
+            font-size: 24px;
+            list-style: none;
+            color:#fff;
+
+        }
+    }
+    &__idiomas{
+        margin: 30px 0 0 30px;
+        h2{
+            margin-bottom: 10px;
+            font-size: 25px;
+            text-transform: uppercase;
+            color:#99c7c7;
+        }
+        p{
+            font-size: 24px;
+            color:#fff;
+            span{
+                font-size: 18px;
+            }
+        }
+    }
+}

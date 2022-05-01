@@ -1,0 +1,56 @@
+.infoPersonal{
+    grid-area: celeste;
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    grid-template-areas: 
+    
+    "foto nombre"
+    "foto info"
+    ;
+
+
+    background-color: #99c7c7;
+    color: #fff;
+    &__nombre{
+        grid-area: nombre;
+        text-transform: uppercase;
+        display: flex;
+        align-items: flex-end;
+        margin-left: 30px;
+        font-size: 40px;
+    }
+    &__fotoPerfil{
+        display: flex;
+        align-items:center;
+        justify-content: center;
+        width: 250px;
+        height: 220px;
+        grid-area: foto;
+        img{
+            width: 190px;
+            height: 190px;
+            border-radius: 50%;
+            border: 6px solid #fff;
+        }
+    }
+    &__datosImportantes{
+        grid-area: info;
+        display: flex;
+        margin: 3px 0 0 30px ;
+        
+        ul{
+            list-style: none;
+            font-size: 17px;
+            li{
+                display: flex;
+                align-items: center;
+
+                .listItem{
+                    margin-left: 7px;
+                    color:#fff;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
