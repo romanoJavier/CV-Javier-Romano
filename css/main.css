@@ -7,7 +7,7 @@
 
 body {
   background-color: #707070;
-  font-family: 'IBM Plex Mono', monospace;
+  font-family: 'Poppins', sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -28,19 +28,6 @@ body {
   -ms-grid-rows: 220px 900px;
       grid-template-rows: 220px 900px;
       grid-template-areas: "celeste celeste celeste" "negro blanco blanco";
-}
-
-@media only screen and (max-width: 470px) {
-  .container {
-    width: 950px;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    -ms-grid-rows: 1fr;
-        grid-template-rows: 1fr;
-        grid-template-areas: "celeste" "negro" "blanco";
-  }
 }
 
 .infoPersonal {
@@ -347,7 +334,68 @@ body {
   grid-area: lugar;
 }
 
-@media only screen and (max-width: 470px) {
+@media only screen and (max-width: 900px) {
+  .container {
+    width: 950px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "celeste" "negro" "blanco";
+  }
+  .infoPersonal {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: "foto" "nombre" "info";
+  }
+  .infoPersonal__nombre {
+    margin-left: 0;
+    font-size: 20px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 10px;
+  }
+  .infoPersonal__fotoPerfil {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .infoPersonal__datosImportantes {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 0 20px 0;
+  }
+  .infoPersonal__datosImportantes ul {
+    font-size: 15px;
+  }
+  .skills {
+    text-align: center;
+  }
+  .skills__habilidades {
+    margin-left: 0;
+  }
+  .skills__habilidades h2 {
+    font-size: 20px;
+  }
+  .skills__habilidades ul {
+    font-size: 18px;
+  }
+  .skills__idiomas {
+    margin-left: 0;
+    margin-bottom: 30px;
+  }
+  .skills__idiomas h2 {
+    font-size: 20px;
+  }
+  .skills__idiomas p {
+    font-size: 18px;
+  }
+  .skills__idiomas p span {
+    font-size: 16px;
+  }
   .infoPrincipal__perfil {
     margin-left: 0;
   }
@@ -421,60 +469,6 @@ body {
   }
   .infoPrincipal__experienciaLaboral ul li .lugarTrabajo {
     font-size: 15px;
-  }
-}
-
-@media only screen and (max-width: 470px) {
-  .infoPersonal {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-        grid-template-areas: "foto" "nombre" "info";
-  }
-  .infoPersonal__nombre {
-    margin-left: 0;
-    font-size: 20px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin-bottom: 10px;
-  }
-  .infoPersonal__fotoPerfil {
-    width: 100%;
-    margin-bottom: 10px;
-  }
-  .infoPersonal__datosImportantes {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin: 0 0 20px 0;
-  }
-  .infoPersonal__datosImportantes ul {
-    font-size: 15px;
-  }
-  .skills {
-    text-align: center;
-  }
-  .skills__habilidades {
-    margin-left: 0;
-  }
-  .skills__habilidades h2 {
-    font-size: 20px;
-  }
-  .skills__habilidades ul {
-    font-size: 18px;
-  }
-  .skills__idiomas {
-    margin-left: 0;
-    margin-bottom: 30px;
-  }
-  .skills__idiomas h2 {
-    font-size: 20px;
-  }
-  .skills__idiomas p {
-    font-size: 18px;
-  }
-  .skills__idiomas p span {
-    font-size: 16px;
   }
 }
 /*# sourceMappingURL=main.css.map */

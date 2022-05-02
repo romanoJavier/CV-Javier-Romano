@@ -6,7 +6,7 @@
 
 body{
     background-color: rgb(112, 112, 112);
-    font-family: 'IBM Plex Mono', monospace;
+    font-family: 'Poppins', sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -23,22 +23,4 @@ body{
     "celeste celeste celeste"
     "negro blanco blanco"
     ;
-}
-
-@media only screen and (max-width:470px) {
-
-    .container{
-        width: 950px;
-        display: grid;
-        grid-template-columns:1fr;
-        grid-template-rows: 1fr;
-    
-        grid-template-areas: 
-        "celeste"
-        "negro"
-        "blanco"
-        ;
-    }
-
-
 }
