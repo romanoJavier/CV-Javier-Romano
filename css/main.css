@@ -30,6 +30,19 @@ body {
       grid-template-areas: "celeste celeste celeste" "negro blanco blanco";
 }
 
+@media only screen and (max-width: 470px) {
+  .container {
+    width: 950px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "celeste" "negro" "blanco";
+  }
+}
+
 .infoPersonal {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
@@ -332,5 +345,136 @@ body {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: lugar;
+}
+
+@media only screen and (max-width: 470px) {
+  .infoPrincipal__perfil {
+    margin-left: 0;
+  }
+  .infoPrincipal__perfil h2 {
+    text-align: center;
+    font-size: 20px;
+    padding: 0;
+    width: auto;
+  }
+  .infoPrincipal__perfil h2::before {
+    content: "";
+    bottom: 6px;
+    height: 7px;
+  }
+  .infoPrincipal__perfil p {
+    text-align: center;
+    font-size: 16px;
+    margin: 0 30px 0 30px;
+  }
+  .infoPrincipal__formacionAcademica h2 {
+    text-align: center;
+    font-size: 20px;
+    padding: 0;
+    width: auto;
+    margin-bottom: 20px;
+  }
+  .infoPrincipal__formacionAcademica h2::before {
+    content: "";
+    bottom: 6px;
+    height: 7px;
+  }
+  .infoPrincipal__formacionAcademica ul {
+    font-size: 15px;
+    margin-left: 0;
+  }
+  .infoPrincipal__formacionAcademica ul li {
+    text-align: center;
+        grid-template-areas: "carrera" "lugar" "tiempo";
+    margin-bottom: 20px;
+  }
+  .infoPrincipal__formacionAcademica ul li .tiempoEstudio {
+    font-size: 14px;
+    margin: 0;
+  }
+  .infoPrincipal__formacionAcademica ul li .lugarEstudio {
+    font-size: 15px;
+  }
+  .infoPrincipal__experienciaLaboral h2 {
+    text-align: center;
+    font-size: 20px;
+    padding: 0;
+    width: auto;
+  }
+  .infoPrincipal__experienciaLaboral h2::before {
+    content: "";
+    bottom: 6px;
+    height: 7px;
+  }
+  .infoPrincipal__experienciaLaboral ul {
+    font-size: 15px;
+    margin-left: 0;
+  }
+  .infoPrincipal__experienciaLaboral ul li {
+    text-align: center;
+        grid-template-areas: "trabajo" "lugar" "tiempo";
+    margin-bottom: 20px;
+  }
+  .infoPrincipal__experienciaLaboral ul li .tiempoTrabajo {
+    font-size: 14px;
+    margin: 0;
+  }
+  .infoPrincipal__experienciaLaboral ul li .lugarTrabajo {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .infoPersonal {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: "foto" "nombre" "info";
+  }
+  .infoPersonal__nombre {
+    margin-left: 0;
+    font-size: 20px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 10px;
+  }
+  .infoPersonal__fotoPerfil {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .infoPersonal__datosImportantes {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 0 20px 0;
+  }
+  .infoPersonal__datosImportantes ul {
+    font-size: 15px;
+  }
+  .skills {
+    text-align: center;
+  }
+  .skills__habilidades {
+    margin-left: 0;
+  }
+  .skills__habilidades h2 {
+    font-size: 20px;
+  }
+  .skills__habilidades ul {
+    font-size: 18px;
+  }
+  .skills__idiomas {
+    margin-left: 0;
+    margin-bottom: 30px;
+  }
+  .skills__idiomas h2 {
+    font-size: 20px;
+  }
+  .skills__idiomas p {
+    font-size: 18px;
+  }
+  .skills__idiomas p span {
+    font-size: 16px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

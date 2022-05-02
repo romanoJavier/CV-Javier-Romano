@@ -1,0 +1,56 @@
+@media only screen and (max-width:470px) {
+    
+    .infoPersonal{
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "foto"
+        "nombre"
+        "info"
+        ;
+        &__nombre{
+            margin-left: 0;
+            font-size: 20px;
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+        &__fotoPerfil{
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        &__datosImportantes{
+            justify-content: center;
+            margin: 0 0 20px 0;
+            
+            ul{
+                font-size: 15px;
+            }
+        }
+    }
+
+    .skills{
+        text-align: center;
+        &__habilidades{
+            margin-left: 0;
+            h2{
+                font-size: 20px;
+            }
+            ul{ 
+                font-size: 18px;
+    
+            }
+        }
+        &__idiomas{
+            margin-left: 0;
+            margin-bottom: 30px;
+            h2{
+                font-size: 20px;
+            }
+            p{
+                font-size: 18px;
+                span{
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
