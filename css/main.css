@@ -25,8 +25,8 @@ body {
   display: grid;
   -ms-grid-columns: 250px 1fr 1fr;
       grid-template-columns: 250px 1fr 1fr;
-  -ms-grid-rows: 220px 900px;
-      grid-template-rows: 220px 900px;
+  -ms-grid-rows: 220px 1000px;
+      grid-template-rows: 220px 1000px;
       grid-template-areas: "celeste celeste celeste" "negro blanco blanco";
 }
 
@@ -187,7 +187,7 @@ body {
 .infoPrincipal__perfil h2::before {
   content: "";
   position: absolute;
-  bottom: 7px;
+  bottom: 10px;
   left: 0;
   width: 100%;
   height: 10px;
@@ -221,7 +221,7 @@ body {
 .infoPrincipal__formacionAcademica h2::before {
   content: "";
   position: absolute;
-  bottom: 7px;
+  bottom: 10px;
   left: 0;
   width: 100%;
   height: 10px;
@@ -288,7 +288,7 @@ body {
 .infoPrincipal__experienciaLaboral h2::before {
   content: "";
   position: absolute;
-  bottom: 7px;
+  bottom: 10px;
   left: 0;
   width: 100%;
   height: 10px;
@@ -334,11 +334,8 @@ body {
   grid-area: lugar;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 950px) {
   .container {
-    width: 950px;
-    display: -ms-grid;
-    display: grid;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     -ms-grid-rows: 1fr;
@@ -407,7 +404,7 @@ body {
   }
   .infoPrincipal__perfil h2::before {
     content: "";
-    bottom: 6px;
+    bottom: 8px;
     height: 7px;
   }
   .infoPrincipal__perfil p {
@@ -424,7 +421,7 @@ body {
   }
   .infoPrincipal__formacionAcademica h2::before {
     content: "";
-    bottom: 6px;
+    bottom: 8px;
     height: 7px;
   }
   .infoPrincipal__formacionAcademica ul {
@@ -451,7 +448,7 @@ body {
   }
   .infoPrincipal__experienciaLaboral h2::before {
     content: "";
-    bottom: 6px;
+    bottom: 8px;
     height: 7px;
   }
   .infoPrincipal__experienciaLaboral ul {

@@ -1,8 +1,6 @@
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 950px) {
     
     .container{
-        width: 950px;
-        display: grid;
         grid-template-columns:1fr;
         grid-template-rows: 1fr;
     
@@ -78,7 +76,7 @@
             }
             h2::before{
                 content: "";
-                bottom: 6px;
+                bottom: 8px;
                 height: 7px;
             }
             p{
@@ -97,7 +95,7 @@
             }
             h2::before{
                 content: "";
-                bottom: 6px;
+                bottom: 8px;
                 height: 7px;
             }
             ul{
@@ -131,7 +129,7 @@
             }
             h2::before{
                 content: "";
-                bottom: 6px;
+                bottom: 8px;
                 height: 7px;
             }
             ul{
